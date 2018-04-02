@@ -42,12 +42,12 @@ releases, maintained by ARM.
 ### 7.2.1-1.1 (20180401)
 
 This release packs `gcc-arm-none-eabi-7-2017-q4-major-src.tar.bz2` 
-from December 18, 2017. ([donwload](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1))
+from December 18, 2017 ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1)).
 
 ### 6.3.1-1.1 (20180331)
 
 This release packs `gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2` 
-from June 28, 2017. ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v6.3.1-1.1))
+from June 28, 2017 ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v6.3.1-1.1)).
 
 ## Install
 
@@ -67,7 +67,7 @@ page.
 
 ## Build
 
-The build scripts are part of the separate  
+The build scripts are part of the separate 
 [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
 project.
 
