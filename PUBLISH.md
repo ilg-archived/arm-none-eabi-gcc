@@ -1,4 +1,4 @@
-# How to publish the ARM Embedded GCC binaries?
+# How to publish the GNU MCU Eclipse ARM Embedded GCC binaries?
 
 ## Update the Change log
 
