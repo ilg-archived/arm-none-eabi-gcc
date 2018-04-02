@@ -1,6 +1,30 @@
-# The GNU MCU Eclipse ARM Embedded GCC binaries
+# GNU MCU Eclipse ARM Embedded GCC
 
-This project provides the ARM Embedded GCC binaries via the [release](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page.
+## Rationale
+
+**GNU MCU Eclipse ARM Embedded GCC** is a new ARM toolchain distribution. 
+For user convenience, binaries for all major platforms are provided: 
+Windows 64/32-bits, GNU/Linux 64/32-bits, macOS (64-bits); a portable 
+install method, using `xpm` is also available.
+
+**GNU MCU Eclipse ARM Embedded GCC** closely follows the official 
+[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
+maintained by ARM.
+
+## Changes
+
+Compared to the original ARM release, there are no functional changes; 
+the **same architecture options** are supported, and **the same 
+combinations of libraries** (derived from newlib) are provided.
+
+The only change is a small improvement to the script used to build 
+newlib, where the following options were added:
+
+* `--enable-newlib-io-c99-formats` - enable C99 support in IO functions 
+like printf/scanf
+* `--enable-newlib-io-long-long` - enable long long type support in IO 
+functions like printf/scanf
+
 
 ## Releases
 
@@ -24,8 +48,6 @@ A portable method is to use [`xpm`](https://www.npmjs.com/package/xpm):
 $ xpm install @gnu-mcu-eclipse/arm-none-eabi-gcc --global
 ```
 
-Note: this method will be available soon.
-
 More details are available on the [How to install the ARM toolchain?](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/) page.
 
 ## Build
@@ -33,3 +55,7 @@ More details are available on the [How to install the ARM toolchain?](https://gn
 The build scripts are part of the separate project [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build).
 
 There are no source files, the build script use the _Source Invariant_ archive provided by ARM.
+
+## Publish
+
+The procedure used to publish the binaries is documented in a [separate](PUBLISH.md) page.
