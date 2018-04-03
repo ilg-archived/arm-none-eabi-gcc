@@ -12,7 +12,7 @@ distribution, by ARM.
 For main benefits for the users are:
 
 - convenience: binaries for all major platforms are provided 
-(Windows 64/32-bits, GNU/Linux 64/32-bits, macOS; 
+(Windows 64/32-bits, GNU/Linux 64/32-bits, macOS); 
 - uniform and portable install: the toolchain is also available 
 as a binary xPack, and can be easily installed with `xpm`;
 - improved support for Continuous Integration usage: 
