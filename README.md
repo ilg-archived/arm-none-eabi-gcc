@@ -1,3 +1,5 @@
+[![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/latest/total.svg)](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/) [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/total.svg)](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/)
+
 # GNU MCU Eclipse ARM Embedded GCC
 
 ## Rationale
