@@ -73,7 +73,7 @@ fd9573d0b9e89d87b9bf7f237955bbeba206a93c6cecc2fc3996458798d7a05b
 ## Update the Web
 
 - commit the `gnu-mcu-eclipse.github.io-source` project; use a message 
-like **ARM Embedded GCC v7.2.1-1.1 released**
+like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released**
 - wait for the Travis build to complete; occasionally links to not work,
  and might need to restart the build.
 - remember the post URL, since it must be updated in the release page
