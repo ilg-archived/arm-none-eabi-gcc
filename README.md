@@ -25,15 +25,6 @@ Compared to the original ARM release, there are no functional changes;
 the **same architecture options** are supported, and **the same 
 combinations of libraries** (derived from newlib) are provided.
 
-The only changes are small improvements to newlib, which was extended with 
-the following options:
-
-* `--enable-newlib-io-c99-formats` - enable C99 support in IO functions 
-like printf/scanf
-* `--enable-newlib-io-long-long` - enable long long type support in IO 
-functions like printf/scanf
-
-These changes do not afect newlib-nano.
 
 ## Releases
 
@@ -46,10 +37,26 @@ releases, maintained by ARM.
 This release packs `gcc-arm-none-eabi-7-2017-q4-major-src.tar.bz2` 
 from December 18, 2017 ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1)).
 
+The only changes are small improvements to newlib, which was extended with 
+the following option:
+
+* `--enable-newlib-io-c99-formats` - enable C99 support in IO functions 
+like printf/scanf
+
+This option does not affect newlib-nano.
+
 ### 6.3.1-1.1 (20180331)
 
 This release packs `gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2` 
 from June 28, 2017 ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v6.3.1-1.1)).
+
+The only changes are small improvements to newlib, which was extended with 
+the following option:
+
+* `--enable-newlib-io-c99-formats` - enable C99 support in IO functions 
+like printf/scanf
+
+This option does not affect newlib-nano.
 
 ## Install
 
