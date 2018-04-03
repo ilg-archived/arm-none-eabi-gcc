@@ -79,7 +79,7 @@ _Source Invariant_ archives provided by ARM.
 
 ## Publish
 
-The procedure used to publish the binaries is documented in the separate  
+The procedure used to publish the binaries is documented in the separate
 [PUBLISH](PUBLISH.md) page.
 
 The metadata files used to publish the xPacks on the `npmjs.com` server 
