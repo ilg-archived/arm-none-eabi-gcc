@@ -56,17 +56,17 @@ Copy/paste the build report at the end of the post as:
 ## Checksums
 The SHA-256 hashes for the files are:
 
-4fe99c9122c7f2f84a998640d9b3d3d890a2ae47cbd5469813a3ad015e69bbd7 
-?gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos32.tar.xz
+4fe99c9122c7f2f84a998640d9b3d3d890a2ae47cbd5469813a3ad015e69bbd7 ?
+gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos32.tar.xz
 
-ed6c727b859eed4fcb55aa14bdafd329f71b087877d2eb7438abfec2bb533227 
-?gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos64.tar.xz
+ed6c727b859eed4fcb55aa14bdafd329f71b087877d2eb7438abfec2bb533227 ?
+gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos64.tar.xz
 
-578c4525187c498ec0b8255ac46d4177ed3b51b115cb6ca4cd379baa6b70db7a 
-?gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win32.zip
+578c4525187c498ec0b8255ac46d4177ed3b51b115cb6ca4cd379baa6b70db7a ?
+gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win32.zip
 
-fd9573d0b9e89d87b9bf7f237955bbeba206a93c6cecc2fc3996458798d7a05b 
-?gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win64.zip
+fd9573d0b9e89d87b9bf7f237955bbeba206a93c6cecc2fc3996458798d7a05b ?
+gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win64.zip
 
 ```
 
