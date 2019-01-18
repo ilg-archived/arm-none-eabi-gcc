@@ -94,3 +94,18 @@ The metadata files used to publish the xPacks on the `npmjs.com` server
 are available from the 
 [gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack)
 project.
+
+## Download analytics
+
+* GitHub [gnu-mcu-eclipse/arm-none-eabi-gcc.git](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/)
+  * latest release
+[![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/latest/total.svg)](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/)
+  * all releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/total.svg)](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/)
+* xPack [@gnu-mcu-eclipse/arm-none-eabi-gcc](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/)
+  * latest release, per month 
+[![npm (scoped)](https://img.shields.io/npm/v/@gnu-mcu-eclipse/arm-none-eabi-gcc.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc/)
+[![npm](https://img.shields.io/npm/dm/@gnu-mcu-eclipse/arm-none-eabi-gcc.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc/)
+  * all releases [![npm](https://img.shields.io/npm/dt/@gnu-mcu-eclipse/arm-none-eabi-gcc.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc/)
+* [individual file counters](https://www.somsubhra.com/github-release-stats/?username=gnu-mcu-eclipse&repository=arm-none-eabi-gcc) (grouped per release)
+  
+Credits to [Shields IO](https://shields.io) and [Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats).
