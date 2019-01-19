@@ -32,7 +32,13 @@ The **GNU MCU Eclipse ARM Embedded GCC** releases generally follow the official
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
-### 7.3.1-1.1 (20180724)
+### 8.2.1-1.1 (2019-01-02)
+
+This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
+and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
+([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.3.1-1.1)).
+
+### 7.3.1-1.1 (2018-07-24)
 
 This release is functionally equivalent to **7-2018-q2-update** from June 27, 2018, 
 and is based on `gcc-arm-none-eabi-7-2018-q2-update-src.tar.bz2`
@@ -40,7 +46,7 @@ and is based on `gcc-arm-none-eabi-7-2018-q2-update-src.tar.bz2`
 
 There should be no changes compared to the ARM release.
 
-### 7.2.1-1.1 (20180401)
+### 7.2.1-1.1 (2018-04-01)
 
 This release is functionally equivalent to **7-2017-q4-major** from December 18, 2017, 
 and is based on `gcc-arm-none-eabi-7-2017-q4-major-src.tar.bz2`
@@ -50,7 +56,7 @@ The only changes are small improvements to newlib, which was extended with
 `--enable-newlib-io-c99-formats` to enable C99 support in IO functions 
 like printf/scanf. This option does not affect newlib-nano.
 
-### 6.3.1-1.1 (20180331)
+### 6.3.1-1.1 (2018-03-31)
 
 This release is functionally equivalent to **6-2017-q2-update** from June 28, 2017,
 and is based on `gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2`
