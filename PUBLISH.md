@@ -106,6 +106,21 @@ In the web git:
 - `download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1`
 - use something like `v7.2.1-1.1 update link` as message
 
+## Create the xPack release
+
+Follow the instructions on the 
+[gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/blob/xpack/README.md#maintainer-info)
+page.
+
+## Tag the build commit
+
+In the [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
+project, add a tag with the current version, like `8.2.1-1.1` (without v).
+
+## Update the README.md
+
+List the new release in the project README.md.
+
 ## Share on Facebook
 
 - go to the new post and follow the Share link.
