@@ -32,11 +32,18 @@ The **GNU MCU Eclipse ARM Embedded GCC** releases generally follow the official
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
+### 8.2.1-1.2 (2019-01-19)
+
+This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
+and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
+([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.2)),
+but fixes the 32-bit objcopy bug present in the previous release.
+
 ### 8.2.1-1.1 (2019-01-02)
 
 This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
 and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
-([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.3.1-1.1)).
+([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.1)).
 
 ### 7.3.1-1.1 (2018-07-24)
 
