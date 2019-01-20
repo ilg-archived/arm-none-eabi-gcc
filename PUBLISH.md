@@ -33,6 +33,22 @@ Follow the instructions on the
 [build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/blob/master/README.md) 
 page.
 
+## Create a new GitHub pre-release
+
+- go to the [GitHub Releases](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page
+- click **Draft a new release**
+- name the tag like **v7.2.1-1.1** (mind the dash in the middle!)
+- name the release like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401** 
+(mind the dash and the space)
+- as description
+  - add a downloads badge like `[![Github Releases (by Release)](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/v7.2.1-1.1/total.svg)]()`; use empty URL for now
+  - draft a short paragraph exlaining what are the main changes
+- **attach binaries** and SHA (drag and drop from the archives folder will do it)
+- enable the pre-release button
+- click the **Publish Release** button
+
+Note: at this moment the system should send a notification to all clients watching this project.
+
 ## Prepare a new blog post 
 
 In the web git:
@@ -40,7 +56,7 @@ In the web git:
 - add a new file to `_posts/arm-none-eabi-gcc/releases`
 - name the file like `2018-04-01-arm-none-eabi-gcc-v7-2-1-1-1-released.md`
 - name the post like: **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401 released**.
-- as `download_url` use the generic `https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/` 
+- as `download_url` use the tagged URL like `https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1/` 
 - update the `date:` field with the current date
 
 If any, close [issues](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/issues) 
@@ -78,33 +94,12 @@ like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released**
  and might need to restart the build.
 - remember the post URL, since it must be updated in the release page
 
-Note: initially the link to binaries points to the parent releases folder, 
-otherwise Travis will complain and do not publish the site to 
-`gnu-mcu-eclipse.github.io`.
-
-## Create a new GitHub release
+## Create a final GitHub release
 
 - go to the [GitHub Releases](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page
-- click **Draft a new release**
-- name the tag like **v7.2.1-1.1** (mind the dash in the middle!)
-- name the release like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401** 
-(mind the dash and the space)
-- as description
-  - add a downloads badge like `[![Github Releases (by Release)](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/v7.2.1-1.1/total.svg)]()`; use empty URL for now
-  - copy the first paragraph from the Web release page
-- add a link to the Web page `[Continue reading »]()`; use an empty URL for now
-- get URL from web and update the above links
-- **attach binaries** and SHA (drag and drop from the archives folder will do it)
-- click the **Publish Release** button
-
-Note: at this moment the system should send a notification to all clients watching this project.
-
-## Update the web link 
-
-In the web git:
-
-- `download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1`
-- use something like `v7.2.1-1.1 update link` as message
+- update the link behind the badge with the blog URL
+- add a link to the Web page `[Continue reading »]()`; use an same blog URL
+- click the **Update Release** button
 
 ## Create the xPack release
 
