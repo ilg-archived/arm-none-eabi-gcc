@@ -94,18 +94,23 @@ like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released**
  and might need to restart the build.
 - remember the post URL, since it must be updated in the release page
 
-## Create a final GitHub release
-
-- go to the [GitHub Releases](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page
-- update the link behind the badge with the blog URL
-- add a link to the Web page `[Continue reading »]()`; use an same blog URL
-- click the **Update Release** button
-
 ## Create the xPack release
 
 Follow the instructions on the 
 [gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/blob/xpack/README.md#maintainer-info)
 page.
+
+## Create a final GitHub release
+
+- go to the [GitHub Releases](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page
+- update the link behind the badge with the blog URL
+- add a link to the Web page `[Continue reading »]()`; use an same blog URL
+- copy/paste the **Easy install** section
+- update the current release version
+- copy/paste the **Download analytics** section
+- update the current release version
+- disable the pre-release button
+- click the **Update Release** button
 
 ## Tag the build commit
 
