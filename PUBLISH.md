@@ -115,7 +115,7 @@ page.
 ## Tag the build commit
 
 In the [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
-project, add a tag with the current version, like `8.2.1-1.1` (without v).
+project, add a tag with the current version, like `v8.2.1-1.1` (with *v*).
 
 ## Update the README.md
 
