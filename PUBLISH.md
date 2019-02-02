@@ -130,3 +130,11 @@ List the new release in the project README.md.
 - click **Post to Facebook**
 - check the post in the [Facebook page](https://www.facebook.com/gnu-mcu-eclipse)
 
+## Share on Twitter
+
+* go to the new post and follow the Tweet link
+* copy the content to the clipboard
+* DO NOT click the Tweet button here, it'll not use the right account
+* in a separate browser windows, open [TweetDeck](https://tweetdeck.twitter.com/)
+* using the `@gnu_mcu_eclipse` account, paste the content
+* click the Tweet button
