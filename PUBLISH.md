@@ -42,7 +42,7 @@ page.
 (mind the dash and the space)
 - as description
   - add a downloads badge like `[![Github Releases (by Release)](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/v7.2.1-1.1/total.svg)]()`; use empty URL for now
-  - draft a short paragraph exlaining what are the main changes
+  - draft a short paragraph explaining what are the main changes
 - **attach binaries** and SHA (drag and drop from the archives folder will do it)
 - enable the pre-release button
 - click the **Publish Release** button
@@ -51,7 +51,7 @@ Note: at this moment the system should send a notification to all clients watchi
 
 ## Prepare a new blog post 
 
-In the web git:
+In the `gnu-mcu-eclipse.github.io-source.git` web git:
 
 - add a new file to `_posts/arm-none-eabi-gcc/releases`
 - name the file like `2018-04-01-arm-none-eabi-gcc-v7-2-1-1-1-released.md`
@@ -119,7 +119,8 @@ project, add a tag with the current version, like `v8.2.1-1.1` (with *v*).
 
 ## Update the README.md
 
-List the new release in the project README.md.
+List the new release in the `gnu-mcu-eclipse/arm-none-eabi-gcc.git` project
+README.md.
 
 ## Share on Facebook
 
