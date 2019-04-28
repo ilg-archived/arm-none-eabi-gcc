@@ -1,37 +1,45 @@
 # How to publish the GNU MCU Eclipse ARM Embedded GCC binaries?
 
-## Update the Change log
+## Build
+
+Before starting the build, perform some checks.
+
+### Check the CHANGELOG file
 
 Generally, apart from packing, there should be no local changes compared 
 to the original ARM distribution.
 
-Open the `CHANGELOG.txt` file from  
-`gnu-mcu-eclipse/arm-none-eabi-gcc-build.git` project git, and copy 
-entries to the web git.
-
-In the web git, add new entries to the 
-[Change log](https://gnu-mcu-eclipse.github.io/toolchain/arm/change-log/) 
-(`pages/toolchain/arm/change-log.md`), grouped by days.
+Open the `CHANGELOG.txt` file from 
+`gnu-mcu-eclipse/arm-none-eabi-gcc-build.git` project git, and check if 
+all new entries are in.
 
 Note: if you missed to update the `CHANGELOG.txt` before starting the build, 
 edit the file and rerun the build, it should take only a few minutes to 
 recreate the archives with the correct file.
 
-## Edit the build script
+### Check the version
 
-Edit the `VERSION` file to refer to the actual release.
+The `VERSION` file should refer to the actual release.
 
-## Push the build script git
+### Push the build script git
 
-Push `gnu-mcu-eclipse/arm-none-eabi-gcc-build.git` to GitHub.
+In `gnu-mcu-eclipse/arm-none-eabi-gcc-build.git`, if necessary, merge 
+the `develop` branch into `master`.
+
+Push it to GitHub.
 
 Possibly push the helper project too.
 
-## Build
+### Run the build scripts
 
-Follow the instructions on the 
+When everything is ready, follow the instructions on the 
 [build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/blob/master/README.md) 
 page.
+
+## Test
+
+Install the binaries on all supported platforms and check if they are 
+functional.
 
 ## Create a new GitHub pre-release
 
@@ -44,10 +52,11 @@ page.
   - add a downloads badge like `[![Github Releases (by Release)](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/v7.2.1-1.1/total.svg)]()`; use empty URL for now
   - draft a short paragraph explaining what are the main changes
 - **attach binaries** and SHA (drag and drop from the archives folder will do it)
-- enable the pre-release button
+- **enable** the **pre-release** button
 - click the **Publish Release** button
 
-Note: at this moment the system should send a notification to all clients watching this project.
+Note: at this moment the system should send a notification to all clients 
+watching this project.
 
 ## Prepare a new blog post 
 
@@ -55,7 +64,7 @@ In the `gnu-mcu-eclipse.github.io-source.git` web git:
 
 - add a new file to `_posts/arm-none-eabi-gcc/releases`
 - name the file like `2018-04-01-arm-none-eabi-gcc-v7-2-1-1-1-released.md`
-- name the post like: **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401 released**.
+- name the post like: **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401 released**
 - as `download_url` use the tagged URL like `https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v7.2.1-1.1/` 
 - update the `date:` field with the current date
 
@@ -63,6 +72,8 @@ If any, close [issues](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/issu
 on the way. Refer to them as:
 
 - **[Issue:\[#1\]\(...\)]**.
+
+Also close [build issues](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues).
 
 ## Update the SHA sums
 
@@ -72,18 +83,17 @@ Copy/paste the build report at the end of the post as:
 ## Checksums
 The SHA-256 hashes for the files are:
 
-4fe99c9122c7f2f84a998640d9b3d3d890a2ae47cbd5469813a3ad015e69bbd7 ?
+4fe99c9122c7f2f84a998640d9b3d3d890a2ae47cbd5469813a3ad015e69bbd7
 gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos32.tar.xz
 
-ed6c727b859eed4fcb55aa14bdafd329f71b087877d2eb7438abfec2bb533227 ?
+ed6c727b859eed4fcb55aa14bdafd329f71b087877d2eb7438abfec2bb533227
 gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos64.tar.xz
 
-578c4525187c498ec0b8255ac46d4177ed3b51b115cb6ca4cd379baa6b70db7a ?
+578c4525187c498ec0b8255ac46d4177ed3b51b115cb6ca4cd379baa6b70db7a
 gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win32.zip
 
-fd9573d0b9e89d87b9bf7f237955bbeba206a93c6cecc2fc3996458798d7a05b ?
+fd9573d0b9e89d87b9bf7f237955bbeba206a93c6cecc2fc3996458798d7a05b
 gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win64.zip
-
 ```
 
 ## Update the Web
@@ -91,12 +101,12 @@ gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-win64.zip
 - commit the `gnu-mcu-eclipse.github.io-source` project; use a message 
 like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released**
 - wait for the Travis build to complete; occasionally links to not work,
- and might need to restart the build.
+ and might need to restart the build
 - remember the post URL, since it must be updated in the release page
 
 ## Create the xPack release
 
-Follow the instructions on the 
+Follow the instructions from the 
 [gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/blob/xpack/README.md#maintainer-info)
 page.
 
@@ -109,7 +119,7 @@ page.
 - update the current release version
 - copy/paste the **Download analytics** section
 - update the current release version
-- disable the pre-release button
+- **disable** the **pre-release** button
 - click the **Update Release** button
 
 ## Tag the build commit
