@@ -137,21 +137,23 @@ page.
 
 ## Test the xPack
 
-Basically test if the URLs and SHA sums are correct.
+At minimum, test only if the URLs and SHA sums are correct, but for 
+extra safety also rerun the tests.
 
 On all available platforms:
 
-- install the new release
+- install the new xPack release
 
 ```console
 $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 ```
 
-- double check version, to be sure it is the latest one
-- in Eclipse, disable the workspace path
-- in Eclipse, select the global path to the new release
+- double check version, to be sure it is the latest release (sometimes 
+  the NPM server needs some time to propagate the changes)
+- in Eclipse, disable the Workspace ARM Toolchains path (**Restore Defaults**)
+- in Eclipse, select the Global ARM Toolchains path to the new xPack release
 - remove the toolchain temporarily installed in `Downloads`
-- rerun all build and debug tests
+- rerun all build and debug tests, as before
 
 ## Create a final GitHub release
 
