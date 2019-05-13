@@ -41,6 +41,31 @@ page.
 Install the binaries on all supported platforms and check if they are 
 functional.
 
+For this, on each platform:
+
+- unpack the archive in `Downloads`, and rename the version folder,
+  by replacing a dash with a space; this will test paths with spaces;
+  on Windows the current paths always use spaces, so renaming is not needed;
+- clone the build repo from https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build.git
+  locally; on Windows use the Git console;
+- in a separate workspace, Import -> General -> Existing Projects into Workspace
+  the Eclipse projects available in the 
+  `tests/eclipse` folder of the build repo; more details in the 
+  [README.md](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/blob/master/tests/eclipse/README.md)
+- define the **Workspace ARM Toolchain path** to use the `Downloads` 
+  temporary location
+- to test the compiler: for all projects
+  - remove all build folders 
+  - build all configs
+- to test the debugger: for all QEMU debug configurations
+  - start the QEMU debug session, 
+  - single step a few lines (Step Over)
+  - start continuous run (Resume)
+  - halt (Suspend)
+  - start (Resume)
+  - stop (Terminate)
+  - (don't miss the LTO cases, since they had problems)
+
 ## Create a new GitHub pre-release
 
 - go to the [GitHub Releases](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases) page
@@ -109,6 +134,21 @@ like **GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released**
 Follow the instructions from the 
 [gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/blob/xpack/README.md#maintainer-info)
 page.
+
+## Test the xPacks
+
+On all available platforms:
+
+- install the new release
+
+```console
+$ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
+```
+
+- double check version, to be sure it is the latest one
+- in Eclipse, disable the workspace path
+- in Eclipse, select the global path to the new release
+- rerun all build and debug tests
 
 ## Create a final GitHub release
 
