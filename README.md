@@ -32,19 +32,14 @@ The **GNU MCU Eclipse ARM Embedded GCC** releases generally follow the official
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
-### 8.2.1-1.5 (2019-04-26)
+### 8.2.1-1.6 (2019-05-10)
 
 This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
 and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
 ([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.2)),
 but fixes the bugs present in the initial ARM release.
 
-### 8.2.1-1.4 (2019-02-14)
-
-This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
-and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
-([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.2)),
-but fixes the bugs present in the initial ARM release.
+The intermediate releases 8.2.1-1.5 to 8.2.1-1.2 were deprecated.
 
 ### 8.2.1-1.1 (2019-01-02)
 
