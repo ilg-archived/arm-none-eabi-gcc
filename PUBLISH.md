@@ -150,6 +150,7 @@ $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 - double check version, to be sure it is the latest one
 - in Eclipse, disable the workspace path
 - in Eclipse, select the global path to the new release
+- remove the toolchain temporarily installed in `Downloads`
 - rerun all build and debug tests
 
 ## Create a final GitHub release
