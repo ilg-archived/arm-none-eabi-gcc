@@ -135,7 +135,9 @@ Follow the instructions from the
 [gnu-mcu-eclipse/arm-none-eabi-gcc-xpack](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-xpack/blob/xpack/README.md#maintainer-info)
 page.
 
-## Test the xPacks
+## Test the xPack
+
+Basically test if the URLs and SHA sums are correct.
 
 On all available platforms:
 
