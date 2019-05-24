@@ -64,7 +64,7 @@ For this, on each platform:
   - halt (Suspend)
   - start (Resume)
   - stop (Terminate)
-  - (don't miss the LTO cases, since they had problems)
+  - (don't miss the LTO cases, since in the past they had problems)
 
 ## Create a new GitHub pre-release
 
