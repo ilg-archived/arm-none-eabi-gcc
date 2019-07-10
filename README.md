@@ -36,7 +36,7 @@ releases, maintained by ARM.
 
 This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018, 
 and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`
-([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.2)),
+([download](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.7)),
 but fixes the bugs present in the initial ARM release.
 
 The intermediate releases 8.2.1-1.5 to 8.2.1-1.2 were deprecated.
